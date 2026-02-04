@@ -1,0 +1,301 @@
+import React, { useState } from 'react';
+import { 
+  Shield, 
+  TrendingUp, 
+  Crown, 
+  AlertTriangle, 
+  ArrowRight, 
+  BarChart3, 
+  Landmark, 
+  Scale, 
+  CheckCircle2,
+  Info,
+  Table,
+  Calculator,
+  Lock
+} from 'lucide-react';
+
+const BoardroomConsensus = () => {
+  const [activeTab, setActiveTab] = useState('consensus');
+
+  return (
+    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-amber-500 selection:text-slate-900">
+      {/* Hero Section */}
+      <header className="relative overflow-hidden bg-slate-950 border-b border-slate-800">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div className="max-w-5xl mx-auto px-6 py-16 md:py-24 relative z-10 text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 text-xs font-bold uppercase tracking-widest mb-6 border border-amber-500/20">
+            Confidential Briefing
+          </div>
+          <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+            The Boardroom <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600">Consensus</span>
+          </h1>
+          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            We locked <strong>Warren Buffett</strong>, <strong>Benjamin Graham</strong>, and <strong>Joel Greenblatt</strong> in a room (figuratively). We asked them to scan 100+ UK micro-caps. They agreed on just <span className="text-white font-semibold border-b-2 border-amber-500">one</span>.
+          </p>
+        </div>
+      </header>
+
+      {/* The Debate Section */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-serif font-bold text-slate-200 mb-10 text-center">The Deliberation</h2>
+        
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Graham Card */}
+          <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700 hover:border-blue-400/50 transition-colors group">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="p-3 rounded-full bg-blue-900/30 text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                <Shield size={24} />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-200">The Mentor</h3>
+                <p className="text-xs text-blue-400 font-mono uppercase">Benjamin Graham</p>
+              </div>
+            </div>
+            <p className="text-slate-300 italic mb-4 text-sm">"I don't care about the story. I care about the <strong>Assets</strong>. Look at this balance sheet. It's a fortress. Zero net debt and enough inventory to survive an apocalypse."</p>
+            <div className="mt-auto pt-4 border-t border-slate-700/50 space-y-2">
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">Current Ratio:</span>
+                 <span className="text-blue-400 font-mono font-bold">3.4x</span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">Net Debt:</span>
+                 <span className="text-blue-400 font-mono font-bold">ZERO</span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">P/B Ratio:</span>
+                 <span className="text-blue-400 font-mono font-bold">~1.2x</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Greenblatt Card */}
+          <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700 hover:border-emerald-400/50 transition-colors group">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="p-3 rounded-full bg-emerald-900/30 text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                <TrendingUp size={24} />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-200">The Quant</h3>
+                <p className="text-xs text-emerald-400 font-mono uppercase">Joel Greenblatt</p>
+              </div>
+            </div>
+            <p className="text-slate-300 italic mb-4 text-sm">"Ben is right about safety, but look at the <strong>Engine</strong>. It generates high returns on capital (ROCE) without needing debt. It's 'Good' and it's 'Cheap'."</p>
+            <div className="mt-auto pt-4 border-t border-slate-700/50 space-y-2">
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">ROCE (5yr Avg):</span>
+                 <span className="text-emerald-400 font-mono font-bold">18.5%</span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">Earnings Yield:</span>
+                 <span className="text-emerald-400 font-mono font-bold">~9.2%</span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">Magic Rank:</span>
+                 <span className="text-emerald-400 font-mono font-bold">Top 10%</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Buffett Card */}
+          <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700 hover:border-amber-400/50 transition-colors group">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="p-3 rounded-full bg-amber-900/30 text-amber-400 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                <Crown size={24} />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-200">The Oracle</h3>
+                <p className="text-xs text-amber-400 font-mono uppercase">Warren Buffett</p>
+              </div>
+            </div>
+            <p className="text-slate-300 italic mb-4 text-sm">"I like that it's <strong>Boring</strong>. It was founded in 1757. It has survived Napoleon, two World Wars, and the Internet. That is a moat."</p>
+            <div className="mt-auto pt-4 border-t border-slate-700/50 space-y-2">
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">Age:</span>
+                 <span className="text-amber-400 font-mono font-bold">269 Years</span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">Insider Ownership:</span>
+                 <span className="text-amber-400 font-mono font-bold">High (Family)</span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                 <span className="text-slate-400">Retained Earnings:</span>
+                 <span className="text-amber-400 font-mono font-bold">Steady Growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Reveal Section */}
+      <section className="bg-slate-100 text-slate-900 py-20 relative overflow-hidden">
+         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500"></div>
+         <div className="max-w-5xl mx-auto px-6 text-center">
+            <h2 className="text-sm font-bold tracking-[0.2em] text-slate-500 uppercase mb-4">The Chosen Stock</h2>
+            <div className="mb-6 inline-block">
+              <span className="text-7xl md:text-9xl font-black text-slate-900 tracking-tighter">LTHM</span>
+            </div>
+            <h3 className="text-3xl md:text-5xl font-serif font-bold text-slate-800 mb-6">James Latham PLC</h3>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-10">
+              The UK's oldest independent timber distributor. A "Goldilocks" micro-cap that satisfies the safety of Graham, the quality of Buffett, and the valuation of Greenblatt.
+            </p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <div className="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                <p className="text-xs text-slate-500 uppercase font-bold">Price</p>
+                <p className="text-2xl font-bold text-slate-900">~980p</p>
+              </div>
+              <div className="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                <p className="text-xs text-slate-500 uppercase font-bold">P/E Ratio</p>
+                <p className="text-2xl font-bold text-emerald-600">~11.2x</p>
+              </div>
+              <div className="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                <p className="text-xs text-slate-500 uppercase font-bold">Div Yield</p>
+                <p className="text-2xl font-bold text-blue-600">~3.6%+</p>
+                <span className="text-[10px] text-slate-400">+ Special Divs (45p)</span>
+              </div>
+              <div className="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                <p className="text-xs text-slate-500 uppercase font-bold">Book Value</p>
+                <p className="text-2xl font-bold text-slate-900">~816p</p>
+              </div>
+              <div className="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                <p className="text-xs text-slate-500 uppercase font-bold">ROCE (Avg)</p>
+                <p className="text-2xl font-bold text-emerald-600">18.5%</p>
+              </div>
+              <div className="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                <p className="text-xs text-slate-500 uppercase font-bold">Current Ratio</p>
+                <p className="text-2xl font-bold text-blue-600">3.4x</p>
+              </div>
+              <div className="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                <p className="text-xs text-slate-500 uppercase font-bold">Market Cap</p>
+                <p className="text-2xl font-bold text-slate-900">£197m</p>
+              </div>
+              <div className="p-4 bg-white rounded-xl shadow-sm border border-slate-200 bg-amber-50 border-amber-200">
+                <p className="text-xs text-amber-700 uppercase font-bold">Safety Score</p>
+                <p className="text-2xl font-bold text-amber-600">9/10</p>
+              </div>
+            </div>
+         </div>
+      </section>
+
+      {/* Financial DNA Table */}
+      <section className="bg-slate-900 py-16 border-b border-slate-800">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex items-center gap-3 mb-8">
+            <Table className="text-amber-500" />
+            <h3 className="text-2xl font-serif font-bold text-white">Financial DNA Breakdown</h3>
+          </div>
+          
+          <div className="overflow-x-auto rounded-xl border border-slate-700">
+            <table className="w-full text-left text-sm text-slate-400">
+              <thead className="bg-slate-800 text-xs uppercase text-slate-300 font-bold">
+                <tr>
+                  <th className="px-6 py-4">Metric</th>
+                  <th className="px-6 py-4">Value</th>
+                  <th className="px-6 py-4">Why it matters</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-700 bg-slate-900/50">
+                <tr>
+                  <td className="px-6 py-4 font-medium text-white">Revenue (TTM)</td>
+                  <td className="px-6 py-4 font-mono">~£370m</td>
+                  <td className="px-6 py-4 text-slate-500">Steady top-line despite construction slowdown.</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 font-medium text-white">Operating Margin</td>
+                  <td className="px-6 py-4 font-mono">~6.5% - 8%</td>
+                  <td className="px-6 py-4 text-slate-500">Healthy for a distributor (industry avg 3-4%).</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 font-medium text-white">Cash & Equiv.</td>
+                  <td className="px-6 py-4 font-mono text-emerald-400">£30m+</td>
+                  <td className="px-6 py-4 text-slate-500">Huge cash pile for a £197m company (~15% of market cap).</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 font-medium text-white">Total Debt</td>
+                  <td className="px-6 py-4 font-mono text-emerald-400">£0.00</td>
+                  <td className="px-6 py-4 text-slate-500">Passes Graham's strict "Solvency" tests.</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 font-medium text-white">Dividend Payout</td>
+                  <td className="px-6 py-4 font-mono">3x Covered</td>
+                  <td className="px-6 py-4 text-slate-500">Extremely safe dividend (Earnings cover payout 3 times).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Intrinsic Value Calculation */}
+      <section className="bg-slate-950 py-16">
+         <div className="max-w-4xl mx-auto px-6">
+           <div className="flex items-center gap-3 mb-8">
+              <Calculator className="text-blue-500" />
+              <h3 className="text-2xl font-serif font-bold text-white">The Graham Valuation</h3>
+           </div>
+           
+           <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-10">
+                 <Lock size={120} />
+              </div>
+              
+              <p className="text-slate-400 mb-6">
+                Benjamin Graham used a specific formula for "Defensive" investors to find the maximum price they should pay. It balances earnings power with asset protection.
+              </p>
+              
+              <div className="font-mono text-sm md:text-base bg-slate-950 p-6 rounded-xl border border-slate-800 mb-6 text-slate-300">
+                <span className="text-slate-500">// The Formula: √(22.5 × EPS × Book Value)</span><br/><br/>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <span className="text-emerald-500">EPS (Est):</span> ~89p<br/>
+                    <span className="text-blue-500">Book Value:</span> ~816p
+                  </div>
+                  <div className="md:text-right">
+                    <span className="text-amber-500">Multiplier:</span> 22.5
+                  </div>
+                </div>
+                <div className="my-4 border-b border-slate-800"></div>
+                <div className="flex justify-between items-center">
+                   <span>Intrinsic Value:</span>
+                   <span className="text-xl md:text-2xl font-bold text-white">~1,278p</span>
+                </div>
+              </div>
+
+              <div className="flex justify-between items-center bg-emerald-900/20 p-4 rounded-lg border border-emerald-900/50">
+                 <div>
+                   <p className="text-xs text-emerald-400 uppercase font-bold">Current Price</p>
+                   <p className="text-xl font-bold text-white">980p</p>
+                 </div>
+                 <div className="text-right">
+                   <p className="text-xs text-emerald-400 uppercase font-bold">Margin of Safety</p>
+                   <p className="text-xl font-bold text-white">+30.4%</p>
+                 </div>
+              </div>
+              <p className="text-xs text-slate-500 mt-4 text-center">
+                *Calculation is an approximation based on reported P/E and P/B metrics. Actual figures may vary based on daily fluctuations.
+              </p>
+           </div>
+         </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-950 py-12 border-t border-slate-900">
+        <div className="max-w-5xl mx-auto px-6 text-center text-slate-600 text-sm">
+          <p className="mb-4 flex items-center justify-center gap-2">
+            <Info size={16} /> 
+            <span>This is an educational simulation, not financial advice.</span>
+          </p>
+          <p>
+            The "Boardroom" concept is a framework for analyzing stocks using the principles of famous investors. 
+            <br />Data is based on market conditions as of early 2026. Always do your own research.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default BoardroomConsensus;
+
+
