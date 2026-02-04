@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Boardroom Consensus</title>
+    <title>The Boardroom Consensus: Somero</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,22 +21,27 @@
         h1, h2, h3, h4, .font-serif {
             font-family: 'Playfair Display', serif;
         }
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, #1e293b 1px, transparent 1px),
+                              linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
     </style>
 </head>
-<body class="min-h-screen bg-slate-900 text-slate-100 selection:bg-amber-500 selection:text-slate-900">
+<body class="min-h-screen bg-slate-900 text-slate-100 selection:bg-red-500 selection:text-white">
 
     <!-- Hero Section -->
     <header class="relative overflow-hidden bg-slate-950 border-b border-slate-800">
-        <div class="absolute inset-0 opacity-5" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="absolute inset-0 opacity-5 bg-grid-pattern"></div>
         <div class="max-w-5xl mx-auto px-6 py-16 md:py-24 relative z-10 text-center">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 text-xs font-bold uppercase tracking-widest mb-6 border border-amber-500/20">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 text-red-500 text-xs font-bold uppercase tracking-widest mb-6 border border-red-500/20">
                 Confidential Briefing
             </div>
             <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
-                The Boardroom <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600">Consensus</span>
+                The Boardroom <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-600">Consensus</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                We locked <strong>Warren Buffett</strong>, <strong>Benjamin Graham</strong>, and <strong>Joel Greenblatt</strong> in a room (figuratively). We asked them to scan 100+ UK micro-caps. They agreed on just <span class="text-white font-semibold border-b-2 border-amber-500">one</span>.
+                We locked <strong>Warren Buffett</strong>, <strong>Benjamin Graham</strong>, and <strong>Joel Greenblatt</strong> in a room to find the perfect UK micro-cap. They agreed on a company that literally <span class="text-white font-semibold border-b-2 border-red-500">paves the way</span> for the modern economy.
             </p>
         </div>
     </header>
@@ -57,19 +62,19 @@
                         <p class="text-xs text-blue-400 font-mono uppercase">Benjamin Graham</p>
                     </div>
                 </div>
-                <p class="text-slate-300 italic mb-4 text-sm flex-grow">"I don't care about the story. I care about the <strong>Assets</strong>. Look at this balance sheet. It's a fortress. Zero net debt and enough inventory to survive an apocalypse."</p>
+                <p class="text-slate-300 italic mb-4 text-sm flex-grow">"I like the <strong>Margin of Safety</strong>. They have $33 million in cash and absolutely ZERO debt. Even if the economy stops, they can survive for years. It's a 'Net-Net' adjacent play."</p>
                 <div class="mt-auto pt-4 border-t border-slate-700/50 space-y-2">
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">Current Ratio:</span>
-                        <span class="text-blue-400 font-mono font-bold">3.4x</span>
+                        <span class="text-slate-400">Net Cash:</span>
+                        <span class="text-blue-400 font-mono font-bold">$33.2m</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">Net Debt:</span>
+                        <span class="text-slate-400">Total Debt:</span>
                         <span class="text-blue-400 font-mono font-bold">ZERO</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">P/B Ratio:</span>
-                        <span class="text-blue-400 font-mono font-bold">~1.2x</span>
+                        <span class="text-slate-400">Cash % of Mkt Cap:</span>
+                        <span class="text-blue-400 font-mono font-bold">~20%</span>
                     </div>
                 </div>
             </div>
@@ -85,19 +90,19 @@
                         <p class="text-xs text-emerald-400 font-mono uppercase">Joel Greenblatt</p>
                     </div>
                 </div>
-                <p class="text-slate-300 italic mb-4 text-sm flex-grow">"Ben is right about safety, but look at the <strong>Engine</strong>. It generates high returns on capital (ROCE) without needing debt. It's 'Good' and it's 'Cheap'."</p>
+                <p class="text-slate-300 italic mb-4 text-sm flex-grow">"This is a <strong>Magic Formula</strong> textbook case. High Return on Capital (ROCE) and High Earnings Yield. Even in a 'bad' year, they make 20%+ returns on their machines."</p>
                 <div class="mt-auto pt-4 border-t border-slate-700/50 space-y-2">
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">ROCE (5yr Avg):</span>
-                        <span class="text-emerald-400 font-mono font-bold">18.5%</span>
+                        <span class="text-slate-400">ROCE (Avg):</span>
+                        <span class="text-emerald-400 font-mono font-bold">~25-30%</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">Earnings Yield:</span>
-                        <span class="text-emerald-400 font-mono font-bold">~9.2%</span>
+                        <span class="text-slate-400">EV/EBITDA:</span>
+                        <span class="text-emerald-400 font-mono font-bold">~6.4x</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">Magic Rank:</span>
-                        <span class="text-emerald-400 font-mono font-bold">Top 10%</span>
+                        <span class="text-slate-400">Quality:</span>
+                        <span class="text-emerald-400 font-mono font-bold">Asset Light</span>
                     </div>
                 </div>
             </div>
@@ -113,19 +118,19 @@
                         <p class="text-xs text-amber-400 font-mono uppercase">Warren Buffett</p>
                     </div>
                 </div>
-                <p class="text-slate-300 italic mb-4 text-sm flex-grow">"I like that it's <strong>Boring</strong>. It was founded in 1757. It has survived Napoleon, two World Wars, and the Internet. That is a moat."</p>
+                <p class="text-slate-300 italic mb-4 text-sm flex-grow">"They have a <strong>Monopoly Moat</strong>. If you want a flat floor for Amazon, you <em>have</em> to use them. Plus, they return all excess cash to shareholders. Rational capital allocation."</p>
                 <div class="mt-auto pt-4 border-t border-slate-700/50 space-y-2">
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">Age:</span>
-                        <span class="text-amber-400 font-mono font-bold">269 Years</span>
+                        <span class="text-slate-400">Market Share:</span>
+                        <span class="text-amber-400 font-mono font-bold">~97% (US)</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">Insider Ownership:</span>
-                        <span class="text-amber-400 font-mono font-bold">High (Family)</span>
+                        <span class="text-slate-400">Dividend Policy:</span>
+                        <span class="text-amber-400 font-mono font-bold">Pay it All Out</span>
                     </div>
                     <div class="flex justify-between items-center text-sm">
-                        <span class="text-slate-400">Retained Earnings:</span>
-                        <span class="text-amber-400 font-mono font-bold">Steady Growth</span>
+                        <span class="text-slate-400">Competitive Adv:</span>
+                        <span class="text-amber-400 font-mono font-bold">Patents</span>
                     </div>
                 </div>
             </div>
@@ -134,50 +139,50 @@
 
     <!-- The Reveal Section -->
     <section class="bg-slate-100 text-slate-900 py-20 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500"></div>
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-600 via-amber-500 to-blue-600"></div>
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-sm font-bold tracking-[0.2em] text-slate-500 uppercase mb-4">The Chosen Stock</h2>
             <div class="mb-6 inline-block">
-                <span class="text-7xl md:text-9xl font-black text-slate-900 tracking-tighter">LTHM</span>
+                <span class="text-7xl md:text-9xl font-black text-slate-900 tracking-tighter">SOM</span>
             </div>
-            <h3 class="text-3xl md:text-5xl font-serif font-bold text-slate-800 mb-6">James Latham PLC</h3>
+            <h3 class="text-3xl md:text-5xl font-serif font-bold text-slate-800 mb-6">Somero Enterprises</h3>
             <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10">
-                The UK's oldest independent timber distributor. A "Goldilocks" micro-cap that satisfies the safety of Graham, the quality of Buffett, and the valuation of Greenblatt.
+                The global leader in laser-guided concrete screeding technology. A "Pick and Shovel" play on e-commerce, data centers, and industrial growth.
             </p>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
                     <p class="text-xs text-slate-500 uppercase font-bold">Price</p>
-                    <p class="text-2xl font-bold text-slate-900">~980p</p>
+                    <p class="text-2xl font-bold text-slate-900">~215p</p>
                 </div>
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
-                    <p class="text-xs text-slate-500 uppercase font-bold">P/E Ratio</p>
-                    <p class="text-2xl font-bold text-emerald-600">~11.2x</p>
+                    <p class="text-xs text-slate-500 uppercase font-bold">P/E (Normalised)</p>
+                    <p class="text-2xl font-bold text-emerald-600">~8.0x</p>
                 </div>
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
                     <p class="text-xs text-slate-500 uppercase font-bold">Div Yield</p>
-                    <p class="text-2xl font-bold text-blue-600">~3.6%+</p>
-                    <span class="text-[10px] text-slate-400 block mt-1">+ Special Divs (45p)</span>
+                    <p class="text-2xl font-bold text-blue-600">~5.5%</p>
+                    <span class="text-[10px] text-slate-400 block mt-1">Historically higher</span>
                 </div>
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
-                    <p class="text-xs text-slate-500 uppercase font-bold">Book Value</p>
-                    <p class="text-2xl font-bold text-slate-900">~816p</p>
+                    <p class="text-xs text-slate-500 uppercase font-bold">Cash per Share</p>
+                    <p class="text-2xl font-bold text-slate-900">~48p</p>
                 </div>
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
-                    <p class="text-xs text-slate-500 uppercase font-bold">ROCE (Avg)</p>
-                    <p class="text-2xl font-bold text-emerald-600">18.5%</p>
+                    <p class="text-xs text-slate-500 uppercase font-bold">ROCE</p>
+                    <p class="text-2xl font-bold text-emerald-600">20%+</p>
                 </div>
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
-                    <p class="text-xs text-slate-500 uppercase font-bold">Current Ratio</p>
-                    <p class="text-2xl font-bold text-blue-600">3.4x</p>
+                    <p class="text-xs text-slate-500 uppercase font-bold">Debt</p>
+                    <p class="text-2xl font-bold text-blue-600">ZERO</p>
                 </div>
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-200">
                     <p class="text-xs text-slate-500 uppercase font-bold">Market Cap</p>
-                    <p class="text-2xl font-bold text-slate-900">£197m</p>
+                    <p class="text-2xl font-bold text-slate-900">£121m</p>
                 </div>
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-200 bg-amber-50 border-amber-200">
-                    <p class="text-xs text-amber-700 uppercase font-bold">Safety Score</p>
-                    <p class="text-2xl font-bold text-amber-600">9/10</p>
+                    <p class="text-xs text-amber-700 uppercase font-bold">Moat Score</p>
+                    <p class="text-2xl font-bold text-amber-600">10/10</p>
                 </div>
             </div>
         </div>
@@ -188,7 +193,7 @@
         <div class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
             <!-- Background Icon -->
             <div class="absolute -right-10 -bottom-10 opacity-5 rotate-12">
-                <i data-lucide="container" class="w-64 h-64 text-slate-100"></i>
+                <i data-lucide="truck" class="w-64 h-64 text-slate-100"></i>
             </div>
             
             <div class="flex flex-col md:flex-row items-start gap-6 relative z-10">
@@ -196,16 +201,16 @@
                     <i data-lucide="lightbulb" class="w-8 h-8"></i>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-serif font-bold text-white mb-4">The Business: "Simple & Boring"</h3>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-4">The Business: "The Amazon Factor"</h3>
                     <p class="text-slate-300 leading-relaxed text-lg">
-                        James Latham is a classic distributor. They buy timber and panels in huge bulk from global suppliers. They store it in 12 massive depots across the UK. They sell it to joiners, construction firms, and furniture makers who need it <em>immediately</em>.
+                        Imagine an Amazon warehouse. It has robots zooming around at 30mph stacking boxes 10 meters high. If the concrete floor has even a tiny bump, the robot crashes.
                     </p>
                     <p class="text-slate-300 leading-relaxed text-lg mt-4">
-                        They make money on the spread between buying large and selling small. That's it. No complex algorithms, no hidden tech—just moving wood from where it is to where it's needed.
+                        Somero builds the machines that fix this. They use laser-guided hydraulics to smooth wet concrete to within <strong>millimeters of perfection</strong>. It's not optional. If you want to build a modern warehouse, you <em>need</em> a Somero machine.
                     </p>
                     <div class="mt-6 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/30 text-emerald-400 text-xs font-bold uppercase tracking-widest border border-emerald-500/20">
                          <i data-lucide="check" class="w-4 h-4"></i>
-                         <span>Buffett Tenet #1: Understandability</span>
+                         <span>Buffett Tenet #1: Simple & Essential</span>
                     </div>
                 </div>
             </div>
@@ -231,29 +236,29 @@
                     </thead>
                     <tbody class="divide-y divide-slate-700 bg-slate-900/50">
                         <tr>
-                            <td class="px-6 py-4 font-medium text-white">Revenue (TTM)</td>
-                            <td class="px-6 py-4 font-mono">~£370m</td>
-                            <td class="px-6 py-4 text-slate-500">Steady top-line despite construction slowdown.</td>
+                            <td class="px-6 py-4 font-medium text-white">Cash Pile</td>
+                            <td class="px-6 py-4 font-mono text-emerald-400">$33.2 Million</td>
+                            <td class="px-6 py-4 text-slate-500">This is ~20% of the entire company value sitting in the bank.</td>
                         </tr>
                         <tr>
-                            <td class="px-6 py-4 font-medium text-white">Operating Margin</td>
-                            <td class="px-6 py-4 font-mono">~6.5% - 8%</td>
-                            <td class="px-6 py-4 text-slate-500">Healthy for a distributor (industry avg 3-4%).</td>
+                            <td class="px-6 py-4 font-medium text-white">Gross Margin</td>
+                            <td class="px-6 py-4 font-mono">~54%</td>
+                            <td class="px-6 py-4 text-slate-500">Extremely high for machinery. Shows pricing power (Moat).</td>
                         </tr>
                         <tr>
-                            <td class="px-6 py-4 font-medium text-white">Cash & Equiv.</td>
-                            <td class="px-6 py-4 font-mono text-emerald-400">£30m+</td>
-                            <td class="px-6 py-4 text-slate-500">Huge cash pile for a £197m company (~15% of market cap).</td>
+                            <td class="px-6 py-4 font-medium text-white">Revenue (2025 Est)</td>
+                            <td class="px-6 py-4 font-mono text-amber-400">~$89m (Down)</td>
+                            <td class="px-6 py-4 text-slate-500">Currently in a cyclical trough due to interest rates.</td>
                         </tr>
                         <tr>
-                            <td class="px-6 py-4 font-medium text-white">Total Debt</td>
-                            <td class="px-6 py-4 font-mono text-emerald-400">£0.00</td>
-                            <td class="px-6 py-4 text-slate-500">Passes Graham's strict "Solvency" tests.</td>
+                            <td class="px-6 py-4 font-medium text-white">Market Share</td>
+                            <td class="px-6 py-4 font-mono text-emerald-400">97% (USA)</td>
+                            <td class="px-6 py-4 text-slate-500">They effectively possess a monopoly in the high-end screed market.</td>
                         </tr>
                         <tr>
-                            <td class="px-6 py-4 font-medium text-white">Dividend Payout</td>
-                            <td class="px-6 py-4 font-mono">3x Covered</td>
-                            <td class="px-6 py-4 text-slate-500">Extremely safe dividend (Earnings cover payout 3 times).</td>
+                            <td class="px-6 py-4 font-medium text-white">Dividend Policy</td>
+                            <td class="px-6 py-4 font-mono">Regular + Special</td>
+                            <td class="px-6 py-4 text-slate-500">They return excess cash rather than empire building.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -261,12 +266,85 @@
         </div>
     </section>
 
-    <!-- Intrinsic Value Calculation -->
+    <!-- Earnings Trend Graph Section -->
+    <section class="bg-slate-900 py-12 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex items-center gap-3 mb-8">
+                <i data-lucide="bar-chart-2" class="w-8 h-8 text-emerald-500"></i>
+                <h3 class="text-2xl font-serif font-bold text-white">Earnings Trend (Long Term View)</h3>
+            </div>
+            
+            <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                <div class="relative w-full h-64">
+                    <!-- SVG Chart -->
+                    <svg viewBox="0 0 800 280" class="w-full h-full overflow-visible">
+                        <!-- Grid Lines -->
+                        <line x1="0" y1="250" x2="800" y2="250" stroke="#334155" stroke-width="1" />
+                        <line x1="0" y1="150" x2="800" y2="150" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4" />
+                        <line x1="0" y1="50" x2="800" y2="50" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4" />
+
+                        <!-- Path Gradient Defs -->
+                        <defs>
+                            <linearGradient id="chartGradientSomeroLong" x1="0" x2="0" y1="0" y2="1">
+                                <stop offset="0%" stop-color="#ef4444" stop-opacity="0.2"/>
+                                <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Area Fill -->
+                        <!-- Trend Points: 2010(Low), 2012(Rec), 2015(Grow), 2018(High), 2020(Dip), 2021(Peak), 2023(Norm), 2025(Low) -->
+                        <path d="M50 230 L150 210 L250 170 L350 120 L450 140 L550 50 L650 80 L750 210 V250 H50 Z" 
+                              fill="url(#chartGradientSomeroLong)" />
+
+                        <!-- Line Path -->
+                        <path d="M50 230 L150 210 L250 170 L350 120 L450 140 L550 50 L650 80 L750 210" 
+                              fill="none" stroke="#ef4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <!-- Data Points -->
+                        <circle cx="50" cy="230" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+                        <circle cx="150" cy="210" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+                        <circle cx="250" cy="170" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+                        <circle cx="350" cy="120" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+                        <circle cx="450" cy="140" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+                        <circle cx="550" cy="50" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+                        <circle cx="650" cy="80" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+                        <circle cx="750" cy="210" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+
+                        <!-- Annotations -->
+                        <text x="50" y="210" text-anchor="middle" fill="#94a3b8" font-size="10">2010 Recovery</text>
+                        <text x="550" y="35" text-anchor="middle" fill="#fff" font-size="12" font-family="monospace">Boom Peak</text>
+                        <text x="750" y="195" text-anchor="middle" fill="#fff" font-size="12" font-family="monospace">Cycle Low</text>
+
+                        <!-- X Axis Labels -->
+                        <text x="50" y="270" text-anchor="middle" fill="#94a3b8" font-size="12">2010</text>
+                        <text x="150" y="270" text-anchor="middle" fill="#94a3b8" font-size="12">2012</text>
+                        <text x="250" y="270" text-anchor="middle" fill="#94a3b8" font-size="12">2014</text>
+                        <text x="350" y="270" text-anchor="middle" fill="#94a3b8" font-size="12">2017</text>
+                        <text x="450" y="270" text-anchor="middle" fill="#94a3b8" font-size="12">2020</text>
+                        <text x="550" y="270" text-anchor="middle" fill="#94a3b8" font-size="12">2021</text>
+                        <text x="650" y="270" text-anchor="middle" fill="#94a3b8" font-size="12">2023</text>
+                        <text x="750" y="270" text-anchor="middle" fill="#94a3b8" font-size="12">2025</text>
+                    </svg>
+                </div>
+                <div class="mt-4 flex gap-4 text-xs text-slate-500 justify-center">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <span>Long Term Earnings Trend (EPS)</span>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-400 mt-4 text-center italic border-t border-slate-800 pt-4">
+                    "Zooming out to the post-2010 recovery shows the bigger picture. Somero is a long-term compounder that cycles. We are currently sitting at a valuation similar to the early growth phase, despite the company being much larger."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graham Number Calculation -->
     <section class="bg-slate-950 py-16">
         <div class="max-w-4xl mx-auto px-6">
             <div class="flex items-center gap-3 mb-8">
                 <i data-lucide="calculator" class="w-8 h-8 text-blue-500"></i>
-                <h3 class="text-2xl font-serif font-bold text-white">The Graham Valuation</h3>
+                <h3 class="text-2xl font-serif font-bold text-white">The Graham Number</h3>
             </div>
             
             <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 relative overflow-hidden">
@@ -275,15 +353,15 @@
                 </div>
                 
                 <p class="text-slate-400 mb-6">
-                    Benjamin Graham used a specific formula for "Defensive" investors to find the maximum price they should pay. It balances earnings power with asset protection.
+                    Because Somero is cyclical, we calculate the Graham Number using "Normalised Earnings" (Avg of past 5 years) rather than just the current depressed year.
                 </p>
                 
                 <div class="font-mono text-sm md:text-base bg-slate-950 p-6 rounded-xl border border-slate-800 mb-6 text-slate-300">
-                    <span class="text-slate-500">// The Formula: √(22.5 × EPS × Book Value)</span><br/><br/>
+                    <span class="text-slate-500">// The Formula: √(22.5 × Avg EPS × Book Value)</span><br/><br/>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                            <span class="text-emerald-500">EPS (Est):</span> ~89p<br/>
-                            <span class="text-blue-500">Book Value:</span> ~816p
+                            <span class="text-emerald-500">Avg EPS (5yr):</span> ~36p<br/>
+                            <span class="text-blue-500">Book Value:</span> ~90p
                         </div>
                         <div class="md:text-right">
                             <span class="text-amber-500">Multiplier:</span> 22.5
@@ -291,23 +369,23 @@
                     </div>
                     <div class="my-4 border-b border-slate-800"></div>
                     <div class="flex justify-between items-center">
-                        <span>Intrinsic Value:</span>
-                        <span class="text-xl md:text-2xl font-bold text-white">~1,278p</span>
+                        <span>Graham Number:</span>
+                        <span class="text-xl md:text-2xl font-bold text-white">~270p</span>
                     </div>
                 </div>
 
                 <div class="flex justify-between items-center bg-emerald-900/20 p-4 rounded-lg border border-emerald-900/50">
                     <div>
                         <p class="text-xs text-emerald-400 uppercase font-bold">Current Price</p>
-                        <p class="text-xl font-bold text-white">980p</p>
+                        <p class="text-xl font-bold text-white">215p</p>
                     </div>
                     <div class="text-right">
-                        <p class="text-xs text-emerald-400 uppercase font-bold">Margin of Safety</p>
-                        <p class="text-xl font-bold text-white">+30.4%</p>
+                        <p class="text-xs text-emerald-400 uppercase font-bold">Upside Potential</p>
+                        <p class="text-xl font-bold text-white">+25.6%</p>
                     </div>
                 </div>
                 <p class="text-xs text-slate-500 mt-4 text-center">
-                    *Calculation is an approximation based on reported P/E and P/B metrics. Actual figures may vary based on daily fluctuations.
+                    *This is a conservative estimate. If US construction returns to 2021 levels, the intrinsic value would be significantly higher (~500p).
                 </p>
             </div>
         </div>
@@ -322,7 +400,7 @@
             </p>
             <p>
                 The "Boardroom" concept is a framework for analyzing stocks using the principles of famous investors. 
-                <br />Data is based on market conditions as of early 2026. Always do your own research.
+                <br />Data is based on market conditions as of early 2026. Somero (SOM) is listed on AIM.
             </p>
         </div>
     </footer>
